@@ -36,10 +36,16 @@ import UpdatedComponent from './components/withCounter';
 class App extends Component {
   render(){
     return(
-    <div className="App">
-      <ClickCounter name="Me"/>
-      <HoverCounter />
-    </div>)
+    <div className="App">sssssssss
+     <Counter 
+         render={(count, incrementCount) =>(
+        <ClickCounter count = {count} incrementCount = {incrementCount}/>
+     )}/>
+     <Counter 
+         render={(count, incrementCount) =>(
+        <HoverCounter count = {count} incrementCount = {incrementCount}/>
+     )}/>
+         </div>)
 
   }
 }

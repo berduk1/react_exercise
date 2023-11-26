@@ -6,10 +6,9 @@ class ClickCounter extends Component{
         const {count, incrementCount} = this.props
         return(
             <button onClick={incrementCount}>
-                {this.props.name}
                 Clicked {count} times
             </button>
         )
     }
 }
-export default withCounter(ClickCounter, 20)
+export default ClickCounter

@@ -8,4 +8,4 @@ class HoverCounter extends Component{
         <h2 onMouseOver={incrementCount}>Hovered {count} times</h2>)
     }
 }
-export default withCounter(HoverCounter, 15)
+export default HoverCounter
