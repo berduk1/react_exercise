@@ -36,7 +36,7 @@ import UpdatedComponent from './components/withCounter';
 class App extends Component {
   render(){
     return(
-    <div className="App">sssssssss
+    <div className="App">
      <Counter 
          render={(count, incrementCount) =>(
         <ClickCounter count = {count} incrementCount = {incrementCount}/>
