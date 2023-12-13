@@ -32,19 +32,17 @@ import ErrorBoundary from './components/ErrorBoundary';
 import ClickCounter from './components/ClickCounter';
 import HoverCounter from './components/HoverCounter';
 import UpdatedComponent from './components/withCounter';
+import ComponentC from './components/ComponentC';
+
+import { UserProvider } from './components/userContext';
 
 class App extends Component {
   render(){
     return(
-    <div className="App">sssssssss
-     <Counter 
-         render={(count, incrementCount) =>(
-        <ClickCounter count = {count} incrementCount = {incrementCount}/>
-     )}/>
-     <Counter 
-         render={(count, incrementCount) =>(
-        <HoverCounter count = {count} incrementCount = {incrementCount}/>
-     )}/>
+    <div className="App">
+     <UserProvider value="Me">
+      <ComponentC/>
+     </UserProvider>
          </div>)
 
   }
