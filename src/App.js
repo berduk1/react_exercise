@@ -40,9 +40,20 @@ class App extends Component {
   render(){
     return(
     <div className="App">
+<<<<<<< HEAD
      <UserProvider value="Me">
       <ComponentC/>
      </UserProvider>
+=======
+     <Counter 
+         render={(count, incrementCount) =>(
+        <ClickCounter count = {count} incrementCount = {incrementCount}/>
+     )}/>
+     <Counter 
+         render={(count, incrementCount) =>(
+        <HoverCounter count = {count} incrementCount = {incrementCount}/>
+     )}/>
+>>>>>>> ad24c26b1b73d1138744c4cf6186d770ac166515
          </div>)
 
   }
